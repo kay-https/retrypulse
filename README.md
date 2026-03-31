@@ -32,3 +32,64 @@ Fluxo implementado neste projeto:
 ---
 
 ## ⚙️ Estrutura do Projeto
+src/main/java/com/kay/retrypulse
+
+controller
+└── RetryController
+
+service
+└── RetryService
+
+external
+└── ExternalService
+
+
+- **RetryController** → expõe o endpoint da API  
+- **RetryService** → implementa a lógica de retry  
+- **ExternalService** → simula um serviço externo instável  
+
+---
+
+## 🔗 Endpoint
+
+
+GET /retry
+
+
+Exemplo:
+
+
+http://localhost:8080/retry
+
+
+---
+
+## 🧪 Testando a API
+
+Você pode testar utilizando **Postman** ou navegador.
+
+Possíveis respostas:
+
+
+External service success!
+
+
+ou
+
+
+Fallback: external service unavailable
+
+
+---
+
+## 📚 Objetivo do projeto
+
+Este projeto foi criado como parte de um estudo sobre **resiliência em sistemas backend**, explorando boas práticas para lidar com falhas em serviços externos.
+
+---
+
+## 👩‍💻 Autora
+
+**Kayllanne Farias**
+
+Desenvolvedora Back-End em formação focada em **Java e Spring Boot**.
